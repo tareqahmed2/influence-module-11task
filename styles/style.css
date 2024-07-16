@@ -62,7 +62,6 @@ body {
 .header nav ul li a {
   text-decoration: none;
   color: rgb(58, 58, 58);
-  font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -78,6 +77,15 @@ body {
   }
   .header nav ul .header-line-container {
     display: none;
+  }
+  .header h4 {
+    font: 16px;
+  }
+  .header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
   /* .header-icon:hover .header-line-container {
     display: block;
@@ -96,6 +104,14 @@ body {
   gap: 130px;
 }
 
+.banner-left-container {
+  max-width: 582px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
 .banner-left-container h1 {
   color: rgb(58, 58, 58);
   font-family: Poppins;
@@ -108,7 +124,6 @@ body {
 
 .banner-left-container p {
   color: rgb(58, 58, 58);
-  font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -137,6 +152,11 @@ body {
 
 .banner-right-container {
   /* background-image: url(/logos/); */
+  max-width: 440px;
+}
+
+.banner-right-container img {
+  width: 100%;
 }
 
 /* banner responsive
@@ -148,6 +168,9 @@ body {
     justify-content: center;
     text-align: center;
   }
+  .banner-left-container {
+    max-width: 404px;
+  }
   .banner .banner-left-container h1,
   p,
   button {
@@ -155,6 +178,13 @@ body {
   }
   .banner-left-container p {
     text-align: center;
+    font-size: 10px;
+  }
+  .banner-left-container h1 {
+    font-size: 20px;
+  }
+  .banner-right-container {
+    max-width: 257px;
   }
 }
 
@@ -174,7 +204,9 @@ body {
 
 @media screen and (max-width: 576px) {
   .payed-img-container {
-    grid-template-columns: repeat(4, 1fr);
+    max-width: 275px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 100px);
   }
 }
@@ -270,9 +302,13 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .collection {
+    max-width: 329px;
+  }
   .collection-img-container {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
+    column-gap: 0px;
   }
 }
 
@@ -332,6 +368,26 @@ body {
     margin: 20px;
   }
   .feature-btn {
+    text-align: center;
+  }
+  .feature-text-container h3 {
+    max-width: 311px;
+    color: rgb(10, 8, 38);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .feature-text-container {
+  }
+  .feature-text-container p {
+    width: 329px;
+    color: rgb(108, 108, 108);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
     text-align: center;
   }
 }
