@@ -8,6 +8,8 @@
 body {
   font-family: "Poppins", sans-serif;
   max-width: 1440px;
+  /* border: 2px solid green; */
+  margin: 0 auto;
 }
 
 /* shared styles */
@@ -15,10 +17,15 @@ body {
 /* header start here */
 
 .header {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   max-width: 100%;
   margin: 0 auto;
+  margin-bottom: 50px;
   margin-top: 100px;
+}
+
+.header span {
+  display: none;
 }
 
 .header h4 {
@@ -32,13 +39,19 @@ body {
 
 .header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .header nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav ul div {
+  display: flex;
+  justify-content: space-between;
   gap: 34px;
 }
 
@@ -55,4 +68,92 @@ body {
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+/* navbar responsive */
+
+@media screen and (max-width: 576px) {
+  .header nav > div {
+    display: block;
+  }
+  .header nav ul .header-line-container {
+    display: none;
+  }
+  /* .header-icon:hover .header-line-container {
+    display: block;
+  } */
+}
+
+/* banner start here */
+
+.banner {
+  max-width: 100%;
+  /* border: 2px solid red; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 130px;
+}
+
+.banner-left-container h1 {
+  color: rgb(58, 58, 58);
+  font-family: Poppins;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.banner-left-container p {
+  color: rgb(58, 58, 58);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.banner-left-container button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 41px;
+  background: rgb(224, 44, 109);
+  gap: 10px;
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.banner-left-container > * {
+  margin-bottom: 20px;
+}
+
+.banner-right-container {
+  /* background-image: url(/images/camera.png); */
+}
+
+/* banner responsive
+ */
+
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  .banner .banner-left-container h1,
+  p,
+  button {
+    text-align: center;
+  }
+  .banner-left-container p {
+    text-align: center;
+  }
 }
