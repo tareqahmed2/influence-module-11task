@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+}
+
+/* shared styles */
+
+/* header start here */
+
+.header {
+  border: 2px solid red;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.header h4 {
+  color: rgb(58, 58, 58);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 34px;
+}
+
+.header nav ul li {
+  list-style-type: none;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
